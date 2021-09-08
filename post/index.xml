@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 纯真&#39;s Blog</title>
+    <link>https://droidkali.github.io/new/post/</link>
+    <description>Recent content in Posts on 纯真&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 04 Sep 2021 14:56:05 +0000</lastBuildDate><atom:link href="https://droidkali.github.io/new/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://droidkali.github.io/new/2021/09/04/test.html</link>
+      <pubDate>Sat, 04 Sep 2021 14:56:05 +0000</pubDate>
+      
+      <guid>https://droidkali.github.io/new/2021/09/04/test.html</guid>
+      <description>Test 1  echo &amp;#34;Hello,World!&amp;#34;   </description>
+    </item>
+    
+  </channel>
+</rss>

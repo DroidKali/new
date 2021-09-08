@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+
+    <title>备忘录 | 纯真&#39;s Blog</title>
+    <meta property="og:title" content="备忘录 - 纯真&#39;s Blog">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2021-09-04T00:00:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2021-09-04T00:00:00&#43;08:00'>
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="备忘录">
+        
+    <meta name="author" content="jiyili">
+    <meta property="og:url" content="https://droidkali.github.io/new/notes/">
+    <link rel="shortcut icon" href='/new/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/new/css/normalize.css'>
+    <link rel="stylesheet" href='/new/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/new/css/douban.css'>
+    
+        <link rel="stylesheet" href='/new/css/other.css'>
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://droidkali.github.io/new">
+                        纯真&#39;s Blog
+                    </a>
+                
+                <p class="description">The quieter you become, the more you are able to hear.</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://droidkali.github.io/new">首页</a>
+                    
+                    <a class="current" href="https://droidkali.github.io/new/notes/" title="备忘录">备忘录</a>
+                    
+                    <a  href="https://droidkali.github.io/new/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://droidkali.github.io/new/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#渗透相关">渗透相关</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#工具使用">工具使用</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#渗透技巧">渗透技巧</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#web-penetration-test">Web Penetration Test</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#metasploit-framework">Metasploit Framework</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#redteam--内网渗透">RedTeam &amp;&amp; 内网渗透</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#逆向reverse相关">逆向Reverse相关</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#安卓搞机内核相关">安卓搞机&amp;内核相关</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#无线电近源渗透相关">无线电近源渗透相关</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#博客">博客</a>
+      <ul>
+        <li><a href="#个人博客">个人博客</a></li>
+        <li><a href="#团队博客">团队博客</a></li>
+        <li><a href="#无线电硬件极客">无线电&amp;硬件极客</a></li>
+      </ul>
+    </li>
+    <li><a href="#常逛的论坛社区">常逛的论坛&amp;社区</a>
+      <ul>
+        <li></li>
+        <li><a href="#越狱">越狱</a></li>
+        <li><a href="#代码审计">代码审计</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">备忘录</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2021年9月4日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <hr>
+<h2 id="渗透相关">渗透相关</h2>
+<hr>
+<h6 id="web安全学习笔记httpswebsecreadthedocsiozhlatest"><a href="https://websec.readthedocs.io/zh/latest/">Web安全学习笔记</a></h6>
+<h6 id="狼组安全团队公开知识库httpswikiwgpsecorgknowledge"><a href="https://wiki.wgpsec.org/knowledge/">狼组安全团队公开知识库</a></h6>
+<h6 id="the-hacker-recipeshttpswwwthehackerrecipes"><a href="https://www.thehacker.recipes/">The Hacker Recipes</a></h6>
+<h6 id="潇湘信安安全知识库httpswwwyuquecomxxxasec"><a href="https://www.yuque.com/xxxasec">潇湘信安安全知识库</a></h6>
+<h6 id="hacktricks-有关渗透等的-hack-技术分享httpsbookhacktricksxyz"><a href="https://book.hacktricks.xyz/">HackTricks-有关渗透等的 Hack 技术分享</a></h6>
+<h6 id="cobalt-strike资源httpsgiteecomssookingcobaltstrike-cracked"><a href="https://gitee.com/ssooking/cobaltstrike-cracked">Cobalt Strike资源</a></h6>
+<h6 id="apt实战资源httpsstartmeppwlkgnapt"><a href="https://start.me/p/PwlKgn/apt">APT实战资源</a></h6>
+<h6 id="渗透测试相关资料httpsparrotsec-cnorgttopic2062"><a href="https://parrotsec-cn.org/t/topic/2062">渗透测试相关资料</a></h6>
+<h6 id="安全导航网址---hack学习社区httpsindextesla-spacecom"><a href="https://index.tesla-space.com/">安全导航网址 - HACK学习社区</a></h6>
+<h6 id="安全圈info---信息安全导航httpswwwanquanquaninfo"><a href="https://www.anquanquan.info/">安全圈Info - 信息安全导航</a></h6>
+<h6 id="渗透师导航httpswwwshentoushitop"><a href="https://www.shentoushi.top/">渗透师导航</a></h6>
+<h6 id="一份自己的安全学习浏览器书签---ssookinghttpswwwcnblogscomssookingp7146142htmlhttpswwwcnblogscomssookingp7146142html"><a href="https://www.cnblogs.com/ssooking/p/7146142.htmlhttps://www.cnblogs.com/ssooking/p/7146142.html">一份自己的安全学习浏览器书签 - ssooking</a></h6>
+<h6 id="远控免杀专题文章httpsmpweixinqqcommphomepage__bizmzg2nta4oti5nahid17sn7f7dad2ce42e5377828925ccc7c84f07scene18wechat_redirect"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg2NTA4OTI5NA==&amp;hid=17&amp;sn=7f7dad2ce42e5377828925ccc7c84f07&amp;scene=18#wechat_redirect">远控免杀专题文章</a></h6>
+<h6 id="某国产浏览器中间人漏洞bettercap安全测试httpswwwfreebufcomvuls216058html"><a href="https://www.freebuf.com/vuls/216058.html">某国产浏览器中间人漏洞Bettercap安全测试</a></h6>
+<h2 id="工具使用">工具使用</h2>
+<h6 id="kali-linux---documentationhttpswwwkaliorgdocs"><a href="https://www.kali.org/docs/">Kali Linux - Documentation</a></h6>
+<h6 id="中间人攻击之bettercap工具使用httpsmpweixinqqcomsxzf5ebn-rs7ygb_7_isrxw"><a href="https://mp.weixin.qq.com/s/XzF5ebn-rs7yGb_7_ISrxw">中间人攻击之Bettercap工具使用</a></h6>
+<h6 id="揭秘bettercap教你如何使用这款优秀的中间人工具httpsmpweixinqqcomsvnjxezd7v_5wgpz7g70geq"><a href="https://mp.weixin.qq.com/s/VNJxEZd7V_5wgPZ7G70gEQ">揭秘Bettercap，教你如何使用这款优秀的中间人工具！</a></h6>
+<h6 id="工具使用--bettetcap-2x版本-使用httpsmpweixinqqcoms2q0mgag_ut-v4uqefkjjqq"><a href="https://mp.weixin.qq.com/s/2Q0mGag_uT-V4uqefkjJqQ">工具使用 | Bettetcap 2.X版本 使用</a></h6>
+<h6 id="工具的使用--shodan的基本使用httpsmpweixinqqcomsy_sfvwybbsvt6jmxkm0kjg"><a href="https://mp.weixin.qq.com/s/y_SfvWybBSVT6JmXKM0kjg">工具的使用 | Shodan的基本使用</a></h6>
+<h6 id="psexec工具的使用httpsmpweixinqqcomsxjprx34hdnpdyeh99okg2w"><a href="https://mp.weixin.qq.com/s/xjPRX34HDNPdYEh99OkG2w">psexec工具的使用</a></h6>
+<h6 id="工具使用文章总结--谢公子学安全httpsmpweixinqqcoms7vt5xf1msrbaxrm48h15_g"><a href="https://mp.weixin.qq.com/s/7vT5Xf1MSRBaXRM48H15_g">工具使用文章总结 | 谢公子学安全</a></h6>
+<h6 id="cobaltstrike使用详解httpswwwanquankecompostid235251"><a href="https://www.anquanke.com/post/id/235251">CobaltStrike使用详解</a></h6>
+<h6 id="sqlmap使用详解httpswwwanquankecompostid235846"><a href="https://www.anquanke.com/post/id/235846">Sqlmap使用详解</a></h6>
+<h6 id="impacket套件之远程命令执行功能讲解httpwwwsecwkcom2019101010045"><a href="http://www.secwk.com/2019/10/10/10045/">Impacket套件之远程命令执行功能讲解</a></h6>
+<h6 id="burpsuite-v20208的汉化以及无cmd框启动httpsxcxmikucomarchives38a7a949"><a href="https://xcxmiku.com/archives/38a7a949/">BurpSuite v2020.8的汉化以及无cmd框启动</a></h6>
+<h6 id="如何正确的导入burpsuite证书httpswwwwaitalonecntechnologyburpsuitesslhtml"><a href="https://www.waitalone.cn/technology/burpsuitessl.html">如何正确的导入BurpSuite证书</a></h6>
+<h2 id="渗透技巧">渗透技巧</h2>
+<h6 id="渗透技巧-从github下载文件的多种方法https3gstudentgithubio3gstudentgithubioe6b897e9808fe68a80e5b7a7-e4bb8egithube4b88be8bdbde69687e4bbb6e79a84e5a49ae7a78de696b9e6b395"><a href="https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E4%BB%8Egithub%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%9A%E7%A7%8D%E6%96%B9%E6%B3%95/">渗透技巧-从Github下载文件的多种方法</a></h6>
+<h6 id="关于burp-intruder模块的小技巧httpswwwt00lsnetarticles-51669html"><a href="https://www.t00ls.net/articles-51669.html">关于Burp Intruder模块的小技巧</a></h6>
+<h6 id="新手福利--burpsuite你可能不知道的技巧httpswwwfreebufcom156928html"><a href="https://www.freebuf.com/156928.html">新手福利 | Burpsuite你可能不知道的技巧</a></h6>
+<h6 id="burpsuite系列--基础技巧一httpsgh0stcnarchives2020-02-131"><a href="https://gh0st.cn/archives/2020-02-13/1">BurpSuite系列 | 基础技巧（一）</a></h6>
+<h6 id="反溯源---cs和msf域名上线httpsxzaliyuncomt5728"><a href="https://xz.aliyun.com/t/5728">反溯源 - CS和MSF域名上线</a></h6>
+<h6 id="安卓app抓包之双向认证突破httpsmpweixinqqcoms69lcgniwggsbcw36j8wafa"><a href="https://mp.weixin.qq.com/s/69LcgNIWggSbCW36j8WAfA">安卓APP抓包之双向认证突破</a></h6>
+<h2 id="web-penetration-test">Web Penetration Test</h2>
+<h6 id="burp-suite-releases-noteshttpsportswiggernetburpreleases"><a href="https://portswigger.net/burp/releases">Burp Suite Releases Notes</a></h6>
+<h6 id="burp-suite-loaderkeygen相关资源httpsgithubcomtrojanazhenburpsuitepro-21git"><a href="https://github.com/TrojanAZhen/BurpSuitePro-2.1.git">Burp Suite Loader&amp;Keygen相关资源</a></h6>
+<h6 id="burpsuite实战指南httpst0datagitbooksioburpsuitecontent"><a href="https://t0data.gitbooks.io/burpsuite/content/">BurpSuite实战指南</a></h6>
+<h6 id="burpsuite练兵场portswigger-web-security-academy介绍httpsmpweixinqqcomsg0ompezopa-cjzhhvwd7nq"><a href="https://mp.weixin.qq.com/s/G0OMpeZOPa-CJZhhVWD7nQ">「Burpsuite练兵场」Portswigger Web Security Academy介绍</a></h6>
+<h6 id="burpsuite练兵场第二节验证机制漏洞httpsmpweixinqqcoms7y-pnjq4ashjool10carra"><a href="https://mp.weixin.qq.com/s/7y-PnJq4ashjOOl10CArrA">「Burpsuite练兵场」第二节：验证机制漏洞</a></h6>
+<h6 id="burpsuite练兵场验证机制漏洞下篇httpsmpweixinqqcoms8haxkmnzpdo9qmcr1fgvcg"><a href="https://mp.weixin.qq.com/s/8HaXKmnzPdO9qmcr1fgvCg">「Burpsuite练兵场」验证机制漏洞（下篇）</a></h6>
+<h6 id="burpsuite练兵场sql注入及相关实验一httpsmpweixinqqcomsdyzawielem94biwmhqz9mq"><a href="https://mp.weixin.qq.com/s/dyzawieLem94bIWMhqZ9MQ">「Burpsuite练兵场」SQL注入及相关实验（一）</a></h6>
+<h6 id="burpsuite练兵场sql注入及相关实验二httpsmpweixinqqcomseu6nztixiqitrwkdfxkoqa"><a href="https://mp.weixin.qq.com/s/eu6nZTIxiqitRwkdFXKOQA">「Burpsuite练兵场」SQL注入及相关实验（二）</a></h6>
+<h6 id="burpsuite练兵场sql注入之盲注上篇httpsmpweixinqqcomsmf428lberiuwyvagf51tvg"><a href="https://mp.weixin.qq.com/s/Mf428LBeriUwYvAgf51tvg">「Burpsuite练兵场」SQL注入之盲注（上篇）</a></h6>
+<h6 id="burpsuite练兵场sql注入之盲注下篇httpsmpweixinqqcomse2lzskykdozxkh7ufpiylg"><a href="https://mp.weixin.qq.com/s/e2lzskYKDOzXkh7ufpiylg">「Burpsuite练兵场」SQL注入之盲注（下篇）</a></h6>
+<h6 id="burpsuite练兵场sql注入之带外通信httpsmpweixinqqcomsytrdgxqw5hqsy-xoxe6uca"><a href="https://mp.weixin.qq.com/s/yTrDGXQw5Hqsy-xOXE6UcA">「Burpsuite练兵场」SQL注入之带外通信</a></h6>
+<h6 id="burpsuite练兵场csrf一httpsmpweixinqqcomsd4hqmgfgsfrxu3zb4yfmya"><a href="https://mp.weixin.qq.com/s/D4hQMGfGsfRxU3Zb4YfMyA">「Burpsuite练兵场」CSRF（一）</a></h6>
+<h6 id="burpsuite练兵场csrf二httpsmpweixinqqcomshrummvumpsyr21wfg4cqhg"><a href="https://mp.weixin.qq.com/s/hrUmmVuMpSYr21WFG4cqhg">「Burpsuite练兵场」CSRF（二）</a></h6>
+<h6 id="burpsuite练兵场http请求走私的基本原理httpsmpweixinqqcomsloelatigl8xh4fs61jjwsw"><a href="https://mp.weixin.qq.com/s/LOElATigl8XH4Fs61jjwSw">「Burpsuite练兵场」HTTP请求走私的基本原理</a></h6>
+<h6 id="burpsuite练兵场如何探查并确认http走私漏洞httpsmpweixinqqcomst7fqrziwrz9x7sm60lytyq"><a href="https://mp.weixin.qq.com/s/T7fQRZiWrz9x7sm60LYTyQ">「Burpsuite练兵场」如何探查并确认HTTP走私漏洞</a></h6>
+<h6 id="burpsuite练兵场目录遍历httpsmpweixinqqcomsnpy_ru1bmskmw5jp_ph8tw"><a href="https://mp.weixin.qq.com/s/npY_rU1bMSkMW5jP_ph8Tw">「Burpsuite练兵场」目录遍历</a></h6>
+<h6 id="梨子带你刷burpsuite靶场系列httpswwwanquankecomtagburpsuite"><a href="https://www.anquanke.com/tag/BurpSuite">梨子带你刷burpsuite靶场系列</a></h6>
+<h6 id="dvwa---常见web漏洞介绍-上httpsmpweixinqqcomssln5nwsilkinf1t4vrxkyw"><a href="https://mp.weixin.qq.com/s/SLN5nwsiLkINf1t4VrxKYw">DVWA - 常见web漏洞介绍-上</a></h6>
+<h6 id="dvwa---常见web漏洞介绍-下httpsmpweixinqqcomstccvizfi-9wteacph5m-aa"><a href="https://mp.weixin.qq.com/s/tCCvIzFi-9WtEAcph5m-AA">DVWA - 常见web漏洞介绍-下</a></h6>
+<h6 id="web漏洞文章总结---谢公子学安全httpsmpweixinqqcomsmcbvidmpqhfwnunbdnpkxw"><a href="https://mp.weixin.qq.com/s/MCBVidmPQHFwNUNbdnpkXw">Web漏洞文章总结 - 谢公子学安全</a></h6>
+<h6 id="sql注入总结httpsmpweixinqqcoms4zcmmz0nnfleccrr-smbjq"><a href="https://mp.weixin.qq.com/s/4zcmmZ0nNflecCRr-SmbjQ">SQL注入总结</a></h6>
+<h6 id="sql注入原理及分析httpspaperseebugorg1665"><a href="https://paper.seebug.org/1665/">SQL注入原理及分析</a></h6>
+<h6 id="xss攻击利用方法总结httpsmpweixinqqcomsqprebh4tkjktb57nd6b9ia"><a href="https://mp.weixin.qq.com/s/QpRebH4tkjKTb57Nd6b9iA">XSS攻击利用方法总结</a></h6>
+<h6 id="当英雄联盟钓鱼网站遇到脚本黑客httpswwwsecpulsecomarchives116392html"><a href="https://www.secpulse.com/archives/116392.html">当英雄联盟钓鱼网站遇到脚本黑客</a></h6>
+<h6 id="极限环境certutil加powershell配合burp快速落地文件httpswwwchabugorgweb1917html"><a href="https://www.chabug.org/web/1917.html">极限环境Certutil加Powershell配合Burp快速落地文件</a></h6>
+<h2 id="metasploit-framework">Metasploit Framework</h2>
+<h6 id="metasploit系列课程--demonsecs-bloghttpswwwggseccncategoriesmetasploit"><a href="https://www.ggsec.cn/categories/Metasploit/">Metasploit系列课程 || Demonsec’s Blog</a></h6>
+<h6 id="metasploit-framework-handbook-一httpswwwanquankecompostid209966"><a href="https://www.anquanke.com/post/id/209966">Metasploit Framework Handbook (一)</a></h6>
+<h6 id="metasploit-framework-handbook-二httpswwwanquankecompostid209972"><a href="https://www.anquanke.com/post/id/209972">Metasploit Framework Handbook (二)</a></h6>
+<h6 id="metasploit-framework-handbook-三httpswwwanquankecompostid209974"><a href="https://www.anquanke.com/post/id/209974">Metasploit Framework Handbook (三)</a></h6>
+<h6 id="metasploit-framework-handbook-四httpswwwanquankecompostid209975"><a href="https://www.anquanke.com/post/id/209975">Metasploit Framework Handbook (四)</a></h6>
+<h6 id="metasploit-unleashed--offensive-securityhttpswwwoffensive-securitycommetasploit-unleashed"><a href="https://www.offensive-security.com/metasploit-unleashed/">Metasploit Unleashed || Offensive Security</a></h6>
+<h6 id="msf使用详解httpswwwanquankecompostid235631"><a href="https://www.anquanke.com/post/id/235631">MSF使用详解</a></h6>
+<h6 id="metasploit-framework-wiki-rapid7httpsgithubcomrapid7metasploit-frameworkwiki"><a href="https://github.com/rapid7/metasploit-framework/wiki">Metasploit Framework Wiki ——Rapid7</a></h6>
+<h6 id="萌新科普-手把手教你如何用msf进行后渗透测试httpswwwanquankecompostid164525"><a href="https://www.anquanke.com/post/id/164525">萌新科普 手把手教你如何用MSF进行后渗透测试</a></h6>
+<h6 id="从cve-2020-0796到meterpreter后渗透攻击httpswwwfreebufcomarticlesothers-articles241937html"><a href="https://www.freebuf.com/articles/others-articles/241937.html">从CVE-2020-0796到Meterpreter后渗透攻击</a></h6>
+<h6 id="深入了解metasploit框架的av免杀新功能httpsxzaliyuncomt2888"><a href="https://xz.aliyun.com/t/2888">深入了解Metasploit框架的AV免杀新功能</a></h6>
+<h2 id="redteam--内网渗透">RedTeam &amp;&amp; 内网渗透</h2>
+<h6 id="红蓝对抗之windows内网渗透httpssecuritytencentcomindexphpblogmsg154"><a href="https://security.tencent.com/index.php/blog/msg/154">红蓝对抗之Windows内网渗透</a></h6>
+<h6 id="红蓝对抗内网渗透之域渗透一httpsmpweixinqqcomss_5imrui3cwcbehyop6frw"><a href="https://mp.weixin.qq.com/s/s_5IMRUI3CwCbEHYOP6frw">『红蓝对抗』内网渗透之域渗透（一）</a></h6>
+<h6 id="红蓝对抗之邮件钓鱼攻击httpssecuritytencentcomindexphpblogmsg165"><a href="https://security.tencent.com/index.php/blog/msg/165">红蓝对抗之邮件钓鱼攻击</a></h6>
+<h6 id="技术分享--内网渗透手动学习实践httpsmpweixinqqcomsgw1k_itx2nskwwu_xntkuq"><a href="https://mp.weixin.qq.com/s/Gw1K_iTx2nsKwWu_XNTKUQ">技术分享 | 内网渗透手动学习实践</a></h6>
+<h6 id="十多年渗透攻击经验分享micro8httpsmicro8gitbookiomicro8"><a href="https://micro8.gitbook.io/micro8/">十多年“渗透攻击”经验分享——Micro8</a></h6>
+<h6 id="译-渗透测试实战第三版红队版httpswizardforcelgitbooksiothe-hacker-playbook-3content"><a href="https://wizardforcel.gitbooks.io/the-hacker-playbook-3/content/">[译] 渗透测试实战第三版(红队版)</a></h6>
+<h6 id="awesome-cobaltstrikehttpsgithubcomzer0yuawesome-cobaltstrike"><a href="https://github.com/zer0yu/Awesome-CobaltStrike">Awesome CobaltStrike</a></h6>
+<h6 id="cobalt-strike-实战指南httpswbglilgitbookiocobalt-strike"><a href="https://wbglil.gitbook.io/cobalt-strike/">Cobalt Strike 实战指南</a></h6>
+<h6 id="cobalt-strike-backuphttps4houwinwordpresscat306"><a href="https://4hou.win/wordpress/?cat=306">Cobalt Strike Backup</a></h6>
+<h6 id="cobalt-strike-学习笔记httpssecurityreseachergiteeiosecurityreseachercategoriesredteam"><a href="https://securityreseacher.gitee.io/securityreseacher/categories/#RedTeam">Cobalt Strike 学习笔记</a></h6>
+<h6 id="cs学习笔记合集httpsteamssixcom201023-192553html"><a href="https://teamssix.com/201023-192553.html">CS学习笔记合集</a></h6>
+<h6 id="红队渗透手册之域渗透基础篇httpsmpweixinqqcomstyvfnrin4dtlzmlrk1cf2w"><a href="https://mp.weixin.qq.com/s/TYVFnrIN4dTlZMLRk1Cf2w">红队渗透手册之域渗透基础篇</a></h6>
+<h6 id="内网横向移动学习备忘录httpswwwsecpulsecomarchives140140html"><a href="https://www.secpulse.com/archives/140140.html">内网横向移动学习备忘录</a></h6>
+<h6 id="wmi利用横向移动httpsmpweixinqqcomsrpsvkeiyaldawekbcdzhfa"><a href="https://mp.weixin.qq.com/s/RpSVKEiYaldAWekBcDzhfA">WMI利用(横向移动)</a></h6>
+<h6 id="浅探内网横向移动-pass-the-hashhttpsxzaliyuncomt8117"><a href="https://xz.aliyun.com/t/8117">浅探内网横向移动-Pass The Hash</a></h6>
+<h6 id="今天老生常谈-pass-the-hashhttpsmpweixinqqcomsxbkc_7b1v7mgey9kcnwsyq"><a href="https://mp.weixin.qq.com/s/XbkC_7b1v7MGEy9kcNWsYQ">今天老生常谈 Pass The Hash</a></h6>
+<h6 id="横向移动之winrm横向移动httpsmpweixinqqcomszimziyqhuugvbi3xdi6wza"><a href="https://mp.weixin.qq.com/s/ZimzIyqHuUGvbi3xDi6WZA">横向移动之WinRM横向移动</a></h6>
+<h6 id="hacking-windows-备忘录httpsxzaliyuncomt6498"><a href="https://xz.aliyun.com/t/6498">Hacking Windows 备忘录</a></h6>
+<h6 id="内网信息收集清单httpsmpweixinqqcoms7pf-f-cccbglpqtdj97m5g"><a href="https://mp.weixin.qq.com/s/7pF-F-cCcbgLPqTdJ97m5g">内网信息收集清单</a></h6>
+<h6 id="内网信息收集wmic使用总结httpswwwfreebufcomsectool281723html"><a href="https://www.freebuf.com/sectool/281723.html">内网信息收集：WMIC使用总结</a></h6>
+<h6 id="windows提权总结httpswwwcnblogscom-mo-p12718115html"><a href="https://www.cnblogs.com/-mo-/p/12718115.html">Windows提权总结</a></h6>
+<h6 id="windows权限维持技术整理httpsxzaliyuncomt8095"><a href="https://xz.aliyun.com/t/8095">Windows权限维持技术整理</a></h6>
+<h6 id="内网渗透----提升权限通过提高程序运行级别httpsmpweixinqqcomsdoghc5ocric3ysvwqkty7g"><a href="https://mp.weixin.qq.com/s/doghc5ocrIC3YSVWQKtY7g">内网渗透 &ndash; 提升权限(通过提高程序运行级别)</a></h6>
+<h6 id="红队和蓝队资料集锦httpswwwlshackcn772"><a href="https://www.lshack.cn/772/">红队和蓝队资料集锦</a></h6>
+<h6 id="redteaming-tookit-collectionhttpsxzaliyuncomt7226"><a href="https://xz.aliyun.com/t/7226">RedTeaming Tookit Collection</a></h6>
+<h6 id="exploit-datebasehttpswwwexploit-dbcom"><a href="https://www.exploit-db.com/">Exploit Datebase</a></h6>
+<h6 id="windows平台提权漏洞集合---secwikihttpsgithubcomsecwikiwindows-kernel-exploits"><a href="https://github.com/SecWiki/windows-kernel-exploits">Windows平台提权漏洞集合 - SecWiki</a></h6>
+<h6 id="linux平台提权漏洞集合---secwikihttpsgithubcomsecwikilinux-kernel-exploits"><a href="https://github.com/SecWiki/linux-kernel-exploits">Linux平台提权漏洞集合 - SecWiki</a></h6>
+<hr>
+<h2 id="逆向reverse相关">逆向Reverse相关</h2>
+<hr>
+<h6 id="翻译-ghidra-简介httpsbbspediycomthread-250056htm"><a href="https://bbs.pediy.com/thread-250056.htm">[翻译] Ghidra 简介</a></h6>
+<h6 id="分享-ghidra-分析程序及个人感受httpsbbspediycomthread-259325htm"><a href="https://bbs.pediy.com/thread-259325.htm">[分享] Ghidra 分析程序及个人感受</a></h6>
+<h6 id="ghidra入门系列教程httpswwwsecpulsecomarchivestagghidra"><a href="https://www.secpulse.com/archives/tag/ghidra">Ghidra入门系列教程</a></h6>
+<h6 id="关于ghidra工具比较详细的用法httpsbitlyintro-ghidra"><a href="https://bit.ly/intro-ghidra">关于Ghidra工具比较详细的用法</a></h6>
+<h6 id="using-ghidra-to-reverse-wifi-pineapple-protectionhttpgerrykcompostsusing_ghidra_to_reverse_wifi_pineapple_protection"><a href="http://gerryk.com/posts/using_ghidra_to_reverse_wifi_pineapple_protection/">Using Ghidra to Reverse WiFi Pineapple Protection</a></h6>
+<h6 id="ida-pro简介httpsmpweixinqqcomsdmh87vnttlht2rpmni_gpq"><a href="https://mp.weixin.qq.com/s/dMh87vNtTLht2RPMNi_gPQ">IDA Pro简介</a></h6>
+<h6 id="ida-pro的基本使用httpsmpweixinqqcomsormkhqstlyuhiry-z76tbg"><a href="https://mp.weixin.qq.com/s/OrmKHQstLyUHiRy-z76tbg">IDA Pro的基本使用</a></h6>
+<h6 id="ida-pro使用技巧总结httpsz3r3fgiteeio20190215idae4bdbfe794a8e68a80e5b7a7e680bbe7bb93"><a href="https://z3r3f.gitee.io/2019/02/15/IDA%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/">IDA Pro使用技巧总结</a></h6>
+<h6 id="ida-pro反汇编工具初识及逆向工程解密实战httpsmpweixinqqcomszqsbwmwc35tfh-diyfovcg"><a href="https://mp.weixin.qq.com/s/ZqSbWMwC35tFH-DIYfoVcg">IDA Pro反汇编工具初识及逆向工程解密实战</a></h6>
+<h6 id="全功能的二进制文件分析工具-radare2-指南httpslinuxcnarticle-13074-1html"><a href="https://linux.cn/article-13074-1.html">全功能的二进制文件分析工具 Radare2 指南</a></h6>
+<h6 id="x64dbg入门系列一--认识x64dbghttpsbbspediycomthread-259952htm"><a href="https://bbs.pediy.com/thread-259952.htm">x64dbg入门系列（一）- 认识x64dbg</a></h6>
+<h6 id="x64dbg入门系列二--搜索字符串httpsbbspediycomthread-259990htm"><a href="https://bbs.pediy.com/thread-259990.htm">x64dbg入门系列（二）- 搜索字符串</a></h6>
+<h6 id="x64dbg入门系列三--函数参考httpsbbspediycomthread-260003htm"><a href="https://bbs.pediy.com/thread-260003.htm">x64dbg入门系列（三）- 函数参考</a></h6>
+<h6 id="x64dbg入门系列四--内存断点httpsbbspediycomthread-260136htm"><a href="https://bbs.pediy.com/thread-260136.htm">x64dbg入门系列（四）- 内存断点</a></h6>
+<h6 id="x64dbg入门系列五--消息断点httpsbbspediycomthread-260187htm"><a href="https://bbs.pediy.com/thread-260187.htm">x64dbg入门系列（五）- 消息断点</a></h6>
+<h6 id="x64dbg入门系列六--实战硬件断点httpsbbspediycomthread-260226htm"><a href="https://bbs.pediy.com/thread-260226.htm">x64dbg入门系列（六）- 实战硬件断点</a></h6>
+<h6 id="原创x64dbg使用技巧与实用插件合集httpsbbspediycomthread-266488htm"><a href="https://bbs.pediy.com/thread-266488.htm">[原创]x64dbg使用技巧与实用插件合集</a></h6>
+<h6 id="x64dbg入门之工具使用实战httpsbbspediycomthread-260156htm"><a href="https://bbs.pediy.com/thread-260156.htm">x64dbg入门之工具使用实战</a></h6>
+<h6 id="使用x64dbg脱壳之开源壳upxhttpwwwkanhaigecompost-67html"><a href="http://www.kanhaige.com/post-67.html">使用x64dbg脱壳之开源壳upx</a></h6>
+<h6 id="x64dbg破解64位winsnap456图文视频教程httpswww52pojiecnthread-403185-1-1html"><a href="https://www.52pojie.cn/thread-403185-1-1.html">x64dbg破解64位WinSnap4.5.6图文视频教程</a></h6>
+<h6 id="一起来逆向分析吃鸡外挂httpsmpweixinqqcoms8i0kfdwnu1q69nh9uihubg"><a href="https://mp.weixin.qq.com/s/8I0KfdWNu1q69NH9UiHUbg">一起来逆向分析吃鸡外挂</a></h6>
+<hr>
+<h2 id="安卓搞机内核相关">安卓搞机&amp;内核相关</h2>
+<hr>
+<h4 id="社区论坛">社区论坛</h4>
+<h6 id="akr-安卓开发者社区httpswwwakr-developerscom"><a href="https://www.akr-developers.com/">AKR-安卓开发者社区</a></h6>
+<h6 id="mokee-open-source-communityhttpsbbsmokeedevcom"><a href="https://bbs.mokeedev.com/">MoKee Open Source Community</a></h6>
+<h6 id="xda-developers-android-forumshttpswwwxda-developerscom"><a href="https://www.xda-developers.com/">XDA Developers Android Forums</a></h6>
+<h4 id="安卓内核编译">安卓内核编译</h4>
+<h6 id="android-releases-xwikicafhttpswikicodeauroraorgxwikibinqaeprelease"><a href="https://wiki.codeaurora.org/xwiki/bin/QAEP/release">Android Releases-XWiki(CAF)</a></h6>
+<h6 id="android-linux-stable-projecthttpsgithubcomandroid-linux-stable"><a href="https://github.com/android-linux-stable">Android Linux Stable Project</a></h6>
+<h6 id="how-to-compile-kernel-standalonehttpsgithubcommicodexiaomi_kernel_opensourcewikihow-to-compile-kernel-standalone"><a href="https://github.com/MiCode/Xiaomi_Kernel_OpenSource/wiki/How-to-compile-kernel-standalone">How to Compile Kernel Standalone</a></h6>
+<h6 id="information-on-compiling-android-kernels-with-clanghttpsgithubcomnathanchanceandroid-kernel-clang"><a href="https://github.com/nathanchance/android-kernel-clang">Information on Compiling Android Kernels with Clang</a></h6>
+<h6 id="how-to-rebase-android-kernel-to-latest-caf-taghttpsincmicomthread-1708002-1-0html"><a href="https://in.c.mi.com/thread-1708002-1-0.html">How to Rebase Android Kernel to latest CAF tag</a></h6>
+<h6 id="how-to-update-your-android-kernel-to-latest-linux-stablehttpsappualscomhow-to-update-your-android-kernel-to-latest-linux-stable"><a href="https://appuals.com/how-to-update-your-android-kernel-to-latest-linux-stable/">How to Update your Android Kernel to latest Linux Stable</a></h6>
+<h6 id="how-to-merge-latest-caf-tag-in-kernelhttpsforumxda-developerscomandroidsoftware-hackingreference-merge-caf-tag-kernel-t3787564"><a href="https://forum.xda-developers.com/android/software-hacking/reference-merge-caf-tag-kernel-t3787564">How to merge latest CAF tag in Kernel</a></h6>
+<h4 id="kali-nethunter-kernel-compile">Kali NetHunter Kernel Compile</h4>
+<h6 id="黑客手机免费送-知乎专栏httpszhuanlanzhihucomp24946336"><a href="https://zhuanlan.zhihu.com/p/24946336">&ldquo;黑客手机&quot;免费送-知乎专栏</a></h6>
+<h6 id="compile-kali-nethunterhttpsblograbitpw2017compile-nethunter"><a href="https://blog.rabit.pw/2017/compile-nethunter/">Compile Kali NetHunter</a></h6>
+<h6 id="跟我把kali-nethunter编译至任意手机httpwwwvulncn7086"><a href="http://www.vuln.cn/7086">跟我把Kali NetHunter编译至任意手机</a></h6>
+<h6 id="kali-nethunter-documentationhttpswwwkaliorgdocsnethunter"><a href="https://www.kali.org/docs/nethunter/">Kali NetHunter Documentation</a></h6>
+<h6 id="building-a-kernel-for-the-razor-phone-2---live-feedhttpsforumskaliorgshowthreadphp44899-building-a-kernel-for-the-razor-phone-2-live-feed"><a href="https://forums.kali.org/showthread.php?44899-Building-a-kernel-for-the-Razor-Phone-2-Live-feed">Building a Kernel for the Razor Phone 2 - Live feed</a></h6>
+<h6 id="专为-hackrf-和-proxmark-3-而构建的支持多种测试功能的-android-内核-shurikenhttpsscriptdotshcomindexphp20181226shuriken-android-kernel-on-steroids"><a href="https://scriptdotsh.com/index.php/2018/12/26/shuriken-android-kernel-on-steroids/">专为 HackRF 和 Proxmark 3 而构建的支持多种测试功能的 Android 内核 Shuriken</a></h6>
+<h6 id="android-cyanogenmod-kernel-building-monitor-mode-on-any-android-device-with-a-wireless-adapterhttpsnull-bytewonderhowtocomhow-toandroid-cyanogenmod-kernel-building-monitor-mode-any-android-device-with-wireless-adapter-0162943"><a href="https://null-byte.wonderhowto.com/how-to/android-cyanogenmod-kernel-building-monitor-mode-any-android-device-with-wireless-adapter-0162943/">Android CyanogenMod Kernel Building: Monitor Mode on Any Android Device with a Wireless Adapter</a></h6>
+<h6 id="oneplus-5t-nethunter内核包下载httpsgitlabcomsimonpunkop5_anykernel3_nethunter-treemasterrelease"><a href="https://gitlab.com/simonpunk/OP5_Anykernel3_Nethunter/-/tree/master/release">OnePlus 5T-NetHunter内核包下载</a></h6>
+<h6 id="oneplus-5t-nethunter内核源码httpsgitlabcomsimonpunkop5_arter97_nethunter_kernel-treeop5-nethunter-pie"><a href="https://gitlab.com/simonpunk/op5_arter97_nethunter_kernel/-/tree/op5-nethunter-pie">OnePlus 5T-NetHunter内核源码</a></h6>
+<h6 id="kali-nethunter-storehttpsstorenethuntercom"><a href="https://store.nethunter.com">Kali NetHunter Store</a></h6>
+<h4 id="安卓rom编译">安卓ROM编译</h4>
+<h6 id="bulid-lineageos-for-santonihttpswikilineageosorgdevicessantonibuild"><a href="https://wiki.lineageos.org/devices/santoni/build">Bulid LineageOS for santoni</a></h6>
+<h6 id="如何自己编译自定义-android-romhttpswwwakr-developerscomd107"><a href="https://www.akr-developers.com/d/107">如何自己编译自定义 Android ROM</a></h6>
+<h6 id="从0开始编译android类原生系统httpsgah0githubio20190727e4bb8e0e5bc80e5a78be7bc96e8af91androide7b1bbe58e9fe7949fe7b3bbe7bb9f"><a href="https://gah0.github.io/2019/07/27/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%BC%96%E8%AF%91android%E7%B1%BB%E5%8E%9F%E7%94%9F%E7%B3%BB%E7%BB%9F/">从0开始编译Android类原生系统</a></h6>
+<h6 id="android-镜像使用帮助httpsmirrorsbfsueducnhelpaosp"><a href="https://mirrors.bfsu.edu.cn/help/AOSP/">Android 镜像使用帮助</a></h6>
+<h6 id="lineageos-源代码镜像使用帮助httpsmirrorsbfsueducnhelplineageos"><a href="https://mirrors.bfsu.edu.cn/help/lineageOS/">LineageOS 源代码镜像使用帮助</a></h6>
+<h6 id="ubuntu-2004-lts下编译-lineageos源码httpswwwhtcpnet5016html"><a href="https://www.htcp.net/5016.html">Ubuntu 20.04 LTS下编译 LineageOS源码</a></h6>
+<h6 id="来个rom编译教程其实并不难适用于各种第三方源码编译httpbbsgfancomandroid-8213453-1-2html"><a href="http://bbs.gfan.com/android-8213453-1-2.html">来个ROM编译教程,其实并不难,适用于各种第三方源码编译</a></h6>
+<h4 id="linux-kernel-development">Linux Kernel Development</h4>
+<h6 id="linux-kernel-new-bieshttpskernelnewbiesorg"><a href="https://kernelnewbies.org/">Linux Kernel New Bies</a></h6>
+<h6 id="linux内核编译配置详解httpwwwfanjiafeicn20181016linuxe58685e6a0b8e7bc96e8af91e9858de7bdaee8afa6e8a7a3"><a href="http://www.fanjiafei.cn/2018/10/16/linux%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/">Linux内核编译配置详解</a></h6>
+<h6 id="关于内核的一些配置httpsblogyangmameorge585b3e4ba8ee58685e6a0b8e79a84e4b880e4ba9be9858de7bdaehtml"><a href="https://blog.yangmame.org/%E5%85%B3%E4%BA%8E%E5%86%85%E6%A0%B8%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE.html">关于内核的一些配置</a></h6>
+<h6 id="如何获取当前内核的编译配置文件httpssegmentfaultcomq1010000002810596"><a href="https://segmentfault.com/q/1010000002810596">如何获取当前内核的编译配置文件</a></h6>
+<h4 id="安卓搞机">安卓搞机</h4>
+<h6 id="xposed-module-repositoryhttpsrepoxposedinfo"><a href="https://repo.xposed.info/">Xposed Module Repository</a></h6>
+<h6 id="download-youtube-video-using-terminal-emulator-by-root-boyhttpsforumxda-developerscomandroidsoftware-hackingdownload-youtube-video-software-t3602492"><a href="https://forum.xda-developers.com/android/software-hacking/download-youtube-video-software-t3602492">Download YouTube Video Using Terminal Emulator by Root Boy</a></h6>
+<h6 id="how-to-share-internet-from-windows-mac-or-linux-to-android-devicehttpsappualscomshare-internet-windows-mac-linux-android-device"><a href="https://appuals.com/share-internet-windows-mac-linux-android-device/">How to Share Internet from Windows, Mac or Linux to Android device</a></h6>
+<h6 id="how-to-force-move-apps-to-sd-card-in-androidhttpsappualscomhow-to-force-move-apps-to-sd-card-in-android"><a href="https://appuals.com/how-to-force-move-apps-to-sd-card-in-android/">How to Force Move Apps to SD card in Android</a></h6>
+<h6 id="android-711-消除网络报错小叉叉的n种方法httpsblograbitpw2017android-captive-portal"><a href="https://blog.rabit.pw/2017/android-captive-portal/">Android 7.1.1 消除网络报错小叉叉的N种方法</a></h6>
+<h6 id="termux高级终端安装使用配置教程httpswwwsqlseccom201805termuxhtml"><a href="https://www.sqlsec.com/2018/05/termux.html">Termux高级终端安装使用配置教程</a></h6>
+<hr>
+<h2 id="无线电近源渗透相关">无线电近源渗透相关</h2>
+<hr>
+<h4 id="hid-attack--badusb">HID ATTACK &amp;&amp; BadUSB</h4>
+<h6 id="新的u盘自动运行badusb原理与实现httpssecuritytencentcomindexphpblogmsg74"><a href="https://security.tencent.com/index.php/blog/msg/74">新的U盘自动运行——BadUSB原理与实现</a></h6>
+<h6 id="极客diy--打造你的专属黑客u盘httpswwwfreebufcomarticlesterminal82238html"><a href="https://www.freebuf.com/articles/terminal/82238.html">极客DIY : 打造你的专属黑客U盘</a></h6>
+<h6 id="针对基于phison群联u盘的badusb攻击httpswwwcnblogscomcodexp4051821html"><a href="https://www.cnblogs.com/codex/p/4051821.html">针对基于Phison(群联)U盘的BadUSB攻击</a></h6>
+<h6 id="diy一个专属hid注入设备吧httpswwwfreebufcomsectool175050html"><a href="https://www.freebuf.com/sectool/175050.html">DIY一个专属HID注入设备吧</a></h6>
+<h6 id="硬核武器-使用cdfs打造一个特殊的u盘httpsmpweixinqqcomshgfpxhm7fhbpf64h2ku49a"><a href="https://mp.weixin.qq.com/s/HGFPXHm7Fhbpf64h2kU49A">“硬核”武器-使用CDFS打造一个特殊的u盘</a></h6>
+<h6 id="usb-rubber-duckybadusb语法httpsgithubcomhak5darrenusb-rubber-duckywikiduckyscript"><a href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript">USB Rubber Ducky(BadUSB)语法</a></h6>
+<h6 id="由arduino-leonardo初识badusbhttpswwwfreebufcomarticlesterminal207356html"><a href="https://www.freebuf.com/articles/terminal/207356.html">由Arduino Leonardo初识BadUSB</a></h6>
+<h6 id="针对usb外设的命令注入渗透httpswwwfreebufcomarticlesterminal214431html"><a href="https://www.freebuf.com/articles/terminal/214431.html">针对USB外设的命令注入渗透</a></h6>
+<h6 id="打造自己的hid-attack武器库-喵神httpsmpweixinqqcomsc_0bllmmd1r3taktgvvxza"><a href="https://mp.weixin.qq.com/s/C_0blLmmD1r3tAktGvvxzA">打造自己的HID Attack武器库-喵神</a></h6>
+<h6 id="基于arduino-leonardo板子的badusb攻击实战httpswwwfreebufcomarticlesterminal131193html"><a href="https://www.freebuf.com/articles/terminal/131193.html">基于Arduino Leonardo板子的BadUSB攻击实战</a></h6>
+<h6 id="badusb测试httpsmpweixinqqcomse_dosxfmfcgu4p53c39bcw"><a href="https://mp.weixin.qq.com/s/E_DoSXFMfcgU4p53C39bCw">BadUSB测试</a></h6>
+<h6 id="badusb简单免杀一秒上线cobaltstrikehttpsmpweixinqqcomsurox1fjommvbmh_-uasfeq"><a href="https://mp.weixin.qq.com/s/UROx1fJOmMVbmH_-UasFEQ">BadUSB简单免杀一秒上线CobaltStrike</a></h6>
+<h6 id="badusb实现后台静默执行上线cobaltstrikehttpsmpweixinqqcomsph9hckgqhirmxu3udn3juw"><a href="https://mp.weixin.qq.com/s/pH9hcKGQHIRMxU3uDN3JUw">BadUSB实现后台静默执行上线CobaltStrike</a></h6>
+<h6 id="badusb的初步探索针对windows研究httpsmpweixinqqcomshskir-kexf0srrl8-fw_tq"><a href="https://mp.weixin.qq.com/s/hsKIR-KeXf0SrRl8-Fw_TQ">BadUSB的初步探索(针对windows研究)</a></h6>
+<h6 id="如何用badusb快速窃取资料绕过杀软uac防火墙httpwwwlegendsecorg1491html"><a href="http://www.legendsec.org/1491.html">如何用BadUSB快速窃取资料(绕过杀软，UAC，防火墙)</a></h6>
+<h6 id="玩转nethunter手到擒来的hid攻击httpwwwsecistcomarchives2501html"><a href="http://www.secist.com/archives/2501.html">玩转NetHunter:手到擒来的HID攻击</a></h6>
+<h6 id="whid-injector--wikihttpsgithubcomwhid-injectorwhidwiki"><a href="https://github.com/whid-injector/WHID/wiki">WHID Injector ‖ Wiki</a></h6>
+<h6 id="基于p4wnp1镜像将raspberry-pi-zero-w变成badusb设备最终实现逃脱杀毒软件检测的安全研究httpsmediumcomfbotes2advance-av-evasion-symantec-and-p4wnp1-usb-c7899bcbc6af"><a href="https://medium.com/@fbotes2/advance-av-evasion-symantec-and-p4wnp1-usb-c7899bcbc6af">基于P4wnP1镜像将Raspberry Pi Zero W变成BadUSB设备，最终实现逃脱杀毒软件检测的安全研究</a></h6>
+<h6 id="近源渗透-p4wnp1_aloa一httpsmpweixinqqcoms8-kqchq3xwctwyauwflp8a"><a href="https://mp.weixin.qq.com/s/8-KqChQ3XWcTWYAUwFlP8A">近源渗透 P4wnP1_Aloa（一）</a></h6>
+<h6 id="mousejack-hacking--如何利用mousjack进行物理攻击httpswwwfreebufcomnews97011html"><a href="https://www.freebuf.com/news/97011.html">MouseJack Hacking : 如何利用MousJack进行物理攻击</a></h6>
+<h6 id="利用罗技漏洞制作一个特别的badusbhttpswwwfreebufcomgeek235527html"><a href="https://www.freebuf.com/geek/235527.html">利用罗技漏洞制作一个特别的BadUSB</a></h6>
+<h6 id="uberducky---通过-ble-触发的无线-usb-橡皮鸭httpsblogice9us201812uberducky-ble-wireless-usb-rubber-duckyhtml"><a href="https://blog.ice9.us/2018/12/uberducky-ble-wireless-usb-rubber-ducky.html">UberDucky - 通过 BLE 触发的无线 USB 橡皮鸭</a></h6>
+<h4 id="rfid-hacking">RFID Hacking</h4>
+<h6 id="rfid-破解基础详解httpsmpweixinqqcomsgkumj8tcgvaapmh0ogs7mw"><a href="https://mp.weixin.qq.com/s/gKUmJ8tCGVAaPMh0oGs7mw">RFID 破解基础详解</a></h6>
+<h6 id="干货你想知道关于破解门禁饭卡的一切httpsmpweixinqqcomsco2w8lxtxt1ul6s5hzwmeg"><a href="https://mp.weixin.qq.com/s/CO2W8lXtXT1ul6s5HZWmeg">【干货】你想知道关于破解门禁/饭卡的一切</a></h6>
+<h6 id="rfid--nfc之自制nfc手表httpsbbspediycomthread-179389htm"><a href="https://bbs.pediy.com/thread-179389.htm">RFID &amp; NFC之自制NFC手表</a></h6>
+<h6 id="proxmark实验室httppm3echocool"><a href="http://pm3.echo.cool/">Proxmark实验室</a></h6>
+<h6 id="acr122读卡器在kali-linux下的基本用法httpsblogmeowpagearchivesthe-basic-usage-of-acr122-reader-on-kali-linux"><a href="https://blog.meow.page/archives/the-basic-usage-of-ACR122-reader-on-kali-linux/">ACR122读卡器在Kali Linux下的基本用法</a></h6>
+<h6 id="办公楼门禁卡的克隆httpsblogmeowpagearchivesclone-access-card-of-office"><a href="https://blog.meow.page/archives/Clone-access-card-of-office/">办公楼门禁卡的克隆</a></h6>
+<h6 id="克隆新小区门禁卡httpsblogmeowpagearchivesclone-access-m1-card"><a href="https://blog.meow.page/archives/Clone-access-m1-card/">克隆新小区门禁卡</a></h6>
+<h6 id="在linux系统上使用proxmark3httpsblogmeowpagearchivesuse-proxmark3-on-linux"><a href="https://blog.meow.page/archives/use-proxmark3-on-linux/">在Linux系统上使用Proxmark3</a></h6>
+<h6 id="proxmark3-命令帮助适用20版本---radiowar-wikihttpsblogmeowpagearchivesproxmark3-commands-helper-on-2-0"><a href="https://blog.meow.page/archives/proxmark3-commands-helper-on-2-0/">Proxmark3 命令帮助（适用2.0版本） - RadioWar Wiki</a></h6>
+<h6 id="在macos系统上使用proxmark3httpsblogmeowpagearchivesproxmark3-on-mac"><a href="https://blog.meow.page/archives/proxmark3-on-mac/">在macOS系统上使用Proxmark3</a></h6>
+<h6 id="clone-ic-card-with-proxmark3httpscyberloginitcom20170402clone-ic-card-with-proxmark3html"><a href="https://cyberloginit.com/2017/04/02/clone-ic-card-with-proxmark3.html">Clone IC Card with Proxmark3</a></h6>
+<h6 id="rfid-hacking-看我如何突破门禁潜入freebuf大本营httpswwwfreebufcomnewstopnews80786html"><a href="https://www.freebuf.com/news/topnews/80786.html">【RFID Hacking ①】看我如何突破门禁潜入FreeBuf大本营</a></h6>
+<h6 id="rfid-hacking-pm3入门指南httpswwwfreebufcomnews100925html"><a href="https://www.freebuf.com/news/100925.html">【RFID Hacking ②】PM3入门指南</a></h6>
+<h6 id="rfid-hacking-proxmark3-使用案例嗅探银行闪付卡信息httpswwwfreebufcomgeek104239html"><a href="https://www.freebuf.com/geek/104239.html">【RFID Hacking ③】ProxMark3 使用案例：嗅探银行闪付卡信息</a></h6>
+<h6 id="rfid-hacking-proxmark3-破解门禁httpswwwfreebufcomarticleswireless109151html"><a href="https://www.freebuf.com/articles/wireless/109151.html">【RFID Hacking ④】ProxMark3 破解门禁</a></h6>
+<h6 id="rfid实战应用之常见射频卡扇区数据分析及破解httpswwwfreebufcomarticlesterminal231555html"><a href="https://www.freebuf.com/articles/terminal/231555.html">RFID实战应用之常见射频卡扇区数据分析及破解</a></h6>
+<h6 id="rfid安全入门pn532-模块的-windows-libnfc-和-mfcuk-编译及使用httpsxzaliyuncomt4046"><a href="https://xz.aliyun.com/t/4046">RFID安全入门：PN532 模块的 Windows libnfc 和 mfcuk 编译及使用</a></h6>
+<h6 id="闪付卡quickpass隐私泄露原理httpswwwfreebufcomarticleswireless158045html"><a href="https://www.freebuf.com/articles/wireless/158045.html">闪付卡（QuickPass）隐私泄露原理</a></h6>
+<h6 id="chiptonfc-nfc-本地中继和嗅探研究httpssalmgnet20190215chiptonfc-local-relay-sniffer"><a href="https://salmg.net/2019/02/15/chiptonfc-local-relay-sniffer/">ChipToNFC: NFC 本地中继和嗅探研究</a></h6>
+<h6 id="针对-nfc-支付的中继攻击介绍httpssalmgnet20181201intro-to-nfc-payment-relay-attacks"><a href="https://salmg.net/2018/12/01/intro-to-nfc-payment-relay-attacks/">针对 NFC 支付的中继攻击介绍</a></h6>
+<h6 id="使用-lora-实现对-nfc-支付的中继攻击httpssalmgnet20190112nfc-payment-relay-attacks-with-lora"><a href="https://salmg.net/2019/01/12/nfc-payment-relay-attacks-with-lora/">使用 LoRa 实现对 NFC 支付的中继攻击</a></h6>
+<h6 id="proxmark3-rfidresearchgroup-repohttpsgithubcomrfidresearchgroupproxmark3"><a href="https://github.com/RfidResearchGroup/proxmark3">Proxmark3 RfidResearchGroup Repo</a></h6>
+<h6 id="pm3命令帮助-icemanhttpwwwicedevsepm3cmdsaspx"><a href="http://www.icedev.se/pm3cmds.aspx">PM3命令帮助-Iceman</a></h6>
+<h6 id="pm3资源-icemanhttpwwwicedevsepm3aspx"><a href="http://www.icedev.se/pm3.aspx">PM3资源-Iceman</a></h6>
+<h6 id="magspoof磁条卡模拟httpssamyplmagspoof"><a href="https://samy.pl/magspoof/">MagSpoof(磁条卡模拟)</a></h6>
+<h4 id="80211-wifi-hacking">802.11 WiFi Hacking</h4>
+<h6 id="wifi-四路握手认证过程介绍httpsmpweixinqqcomssfk15thegx4eotiu9bjucg"><a href="https://mp.weixin.qq.com/s/sFk15theGX4eotiu9bJUCg">WiFi 四路握手认证过程介绍</a></h6>
+<h6 id="wifi-安全与攻击案例分析httpspaperseebugorg1159"><a href="https://paper.seebug.org/1159/">WiFi 安全与攻击案例分析</a></h6>
+<h6 id="wi-fi攻击方式简述httpsmfreebufcomarticlesnetwork240988html"><a href="https://m.freebuf.com/articles/network/240988.html">Wi-Fi攻击方式简述</a></h6>
+<h6 id="wi-fi安全---黑客大揭秘近源渗透测试试读httpsmituringcomcnbooktupubarticle28679bookid2770typetubooksubjecte7acac2e7aba0e38080wi-fie5ae89e585a8"><a href="https://m.ituring.com.cn/book/tupubarticle/28679?bookID=2770&amp;type=tubook&amp;subject=%E7%AC%AC2%E7%AB%A0%E3%80%80Wi-Fi%E5%AE%89%E5%85%A8">Wi-Fi安全 &ndash;《黑客大揭秘:近源渗透测试》试读</a></h6>
+<h6 id="利用pmkid破解psk的实际测试与影响评估httpswwwfreebufcomarticlessystem180837html"><a href="https://www.freebuf.com/articles/system/180837.html">利用PMKID破解PSK的实际测试与影响评估</a></h6>
+<h6 id="翻译-利用-hostapd-wpe-渗透企业无线网络httpsbbspediycomthread-216681htm"><a href="https://bbs.pediy.com/thread-216681.htm">[翻译] 利用 Hostapd-WPE 渗透企业无线网络</a></h6>
+<h6 id="使用-bettercap-结合-pmkid-手法攻击-wpawpa2-网络httpswwwevilsocketnet20190213pwning-wifi-networks-with-bettercap-and-the-pmkid-client-less-attack"><a href="https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/">使用 Bettercap 结合 PMKID 手法攻击 WPA/WPA2 网络</a></h6>
+<h6 id="wifi-pineapple的karma攻击与原理探究httpswwwfreebufcomarticles77055html"><a href="https://www.freebuf.com/articles/77055.html">WiFi Pineapple的Karma攻击与原理探究</a></h6>
+<h6 id="现代无线侦察技术一伪基站ap攻击基本理论篇httpswww4houcompostsrmml"><a href="https://www.4hou.com/posts/rMmL">现代无线侦察技术（一）：伪基站(AP)攻击基本理论篇</a></h6>
+<h6 id="现代无线侦察技术二mana-和已知信标攻击httpswww4houcompostsrm92"><a href="https://www.4hou.com/posts/rM92">现代无线侦察技术（二）：MANA 和已知信标攻击</a></h6>
+<h6 id="现代无线通信技术三管理帧访问控制列表mfaclhttpswww4houcomposts4ywx"><a href="https://www.4hou.com/posts/4YWx">现代无线通信技术（三）：管理帧访问控制列表(MFACL)</a></h6>
+<h6 id="战争从未改变-对-wpa3增强开放的攻击ーー第一部分-我们是如何走到这一步的httpswww4houcomindexphpposts6zpl"><a href="https://www.4hou.com/index.php/posts/6zpL">战争从未改变: 对 WPA3“增强开放”的攻击ーー第一部分: 我们是如何走到这一步的</a></h6>
+<h6 id="战争从未改变-攻击-wpa3的增强开放性第二部分-理解-owe上httpswww4houcompostsdjd5"><a href="https://www.4hou.com/posts/DJD5">战争从未改变: 攻击 WPA3的增强开放性——第二部分: 理解 OWE（上）</a></h6>
+<h6 id="战争从未改变-攻击-wpa3的增强开放性第二部分-理解-owe下httpswww4houcompostsgqj3"><a href="https://www.4hou.com/posts/GQJ3">战争从未改变: 攻击 WPA3的增强开放性——第二部分: 理解 OWE（下）</a></h6>
+<h6 id="战争从未改变-攻击-wpa3的增强开放性第三部分-在风险方面与开放无线几乎无异httpswww4houcompostspx3q"><a href="https://www.4hou.com/posts/pX3Q">战争从未改变: 攻击 WPA3的增强开放性——第三部分: 在风险方面与开放无线几乎无异</a></h6>
+<h6 id="wpa3最新漏洞dragonbloodhttpswpa3mathyvanhoefcom"><a href="https://wpa3.mathyvanhoef.com/">WPA3最新漏洞DRAGONBLOOD</a></h6>
+<h6 id="披露一种针对wifi-wpawpa2协议的motsman-on-the-side的攻击方式httpsgithubcomzjlywjh001cansecwest19"><a href="https://github.com/zjlywjh001/CanSecWest19">披露一种针对WiFi WPA/WPA2协议的MOTS(Man-On-The-Side)的攻击方式</a></h6>
+<h6 id="在-windows-系统的-wpa2-enterprise-中恢复-wpa2-psk-的密码https0x00-0x00githubioresearch20181106recovering-plaintext-domain-credentials-from-wpa2-enterprise-on-a-compromised-hosthtml"><a href="https://0x00-0x00.github.io/research/2018/11/06/Recovering-Plaintext-Domain-Credentials-From-WPA2-Enterprise-on-a-compromised-host.html">在 Windows 系统的 WPA2 Enterprise 中恢复 WPA2 PSK 的密码</a></h6>
+<h6 id="project-dribble-通过-javascript-缓存投毒的方式攻击-wi-fihttpsrhaidiznet20181025dribble-stealing-wifi-password-via-browsers-cache-poisoning"><a href="https://rhaidiz.net/2018/10/25/dribble-stealing-wifi-password-via-browsers-cache-poisoning/">Project Dribble: 通过 JavaScript 缓存投毒的方式攻击 Wi-Fi</a></h6>
+<h6 id="pioson-tap近源缓存投毒和持久性后门httpssamyplpoisontap"><a href="https://samy.pl/poisontap/">Pioson Tap(近源缓存投毒和持久性后门)</a></h6>
+<h6 id="ghost-tunnel-适用于隔离网络的wifi隐蔽传输通道httpswwwfreebufcomarticleswireless171108html"><a href="https://www.freebuf.com/articles/wireless/171108.html">Ghost Tunnel: 适用于隔离网络的WiFi隐蔽传输通道</a></h6>
+<h6 id="pass-the-hash-wifihttpssensepostcomblog2020pass-the-hash-wifi"><a href="https://sensepost.com/blog/2020/pass-the-hash-wifi/">Pass the hash WiFi</a></h6>
+<h4 id="bluetooth--ble-hacking">Bluetooth &amp;&amp; BLE Hacking</h4>
+<h6 id="cve-2020-0022-蓝牙漏洞初探上一个bug引发的血案httpswwwanquankecompostid207974"><a href="https://www.anquanke.com/post/id/207974">CVE-2020-0022 蓝牙漏洞初探（上）一个bug引发的血案</a></h6>
+<h6 id="蓝牙冒充攻击bias漏洞原理分析httpswwwanquankecompostid206624"><a href="https://www.anquanke.com/post/id/206624">蓝牙冒充攻击（BIAS）漏洞原理分析</a></h6>
+<h6 id="bias蓝牙冒充攻击httpswwwanquankecompostid209333"><a href="https://www.anquanke.com/post/id/209333">BIAS：蓝牙冒充攻击</a></h6>
+<h6 id="对低功耗蓝牙ble的简要学习分析httpswww4houcomposts7wgy"><a href="https://www.4hou.com/posts/7Wgy">对低功耗蓝牙（BLE）的简要学习分析</a></h6>
+<h6 id="低功耗蓝牙ble攻击分析httpswwwfreebufcomarticleswireless187843html"><a href="https://www.freebuf.com/articles/wireless/187843.html">低功耗蓝牙（BLE）攻击分析</a></h6>
+<h6 id="ble安全初探之hackmelockhttpswwwanquankecompostid166746"><a href="https://www.anquanke.com/post/id/166746">BLE安全初探之HACKMELOCK</a></h6>
+<h6 id="破解与攻击智能门锁httpsmpweixinqqcomsiy6j0v9pg4j-jlozek7jzw"><a href="https://mp.weixin.qq.com/s/IY6j0v9pG4j-JlozEk7Jzw">破解与攻击智能门锁</a></h6>
+<h6 id="hacking-loccess-智能锁httpswwweyeohteecheapdont-worry-about-being-locked-with-loccess"><a href="https://www.eyeohtee.cheap/dont-worry-about-being-locked-with-loccess">Hacking Loccess 智能锁</a></h6>
+<h6 id="低功耗蓝牙ble入门之如何调戏别人的小米手环httpswwwfreebufcomnews88281html"><a href="https://www.freebuf.com/news/88281.html">低功耗蓝牙（BLE）入门之如何调戏别人的小米手环</a></h6>
+<h6 id="如何进行对-xiaomi-miband-2-的攻击httpshakin9orghow-i-hacked-my-xiaomi-miband-2-fitness-tracker"><a href="https://hakin9.org/how-i-hacked-my-xiaomi-miband-2-fitness-tracker">如何进行对 Xiaomi MiBand 2 的攻击</a></h6>
+<h6 id="ble-hacking使用ubertooth-one扫描嗅探低功耗蓝牙httpswwwfreebufcomarticleswireless106298html"><a href="https://www.freebuf.com/articles/wireless/106298.html">BLE Hacking：使用Ubertooth one扫描嗅探低功耗蓝牙</a></h6>
+<h6 id="低功耗蓝牙重放攻击实战httpsmpweixinqqcomscjuv_s3gda9uy2knjqdp6w"><a href="https://mp.weixin.qq.com/s/cJuV_s3gdA9Uy2KnjqdP6w">低功耗蓝牙重放攻击实战</a></h6>
+<h6 id="无线信号分析之谁开了他的门httpsmpweixinqqcomsqv3exeval9g2gvduqqrf3q"><a href="https://mp.weixin.qq.com/s/qV3exevAl9G2gvDuQQRF3Q">无线信号分析之谁开了他的门</a></h6>
+<h4 id="sub-1ghz--sdr-rf-hacking">Sub-1GHz &amp;&amp; SDR RF Hacking</h4>
+<h6 id="ubuntu-1804配置gnuradio基础环境httpsblogwhite-alonecomubuntu201804e9858de7bdaegnuradioe59fbae7a180e78eafe5a283"><a href="https://blog.white-alone.com/Ubuntu%2018.04%E9%85%8D%E7%BD%AEGNURadio%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83/">Ubuntu 18.04配置GNURadio基础环境</a></h6>
+<h6 id="gnu-radio-3800安装httpsblogwhite-alonecomgnu20radio203800e5ae89e8a385"><a href="https://blog.white-alone.com/GNU%20Radio%203.8.0.0%E5%AE%89%E8%A3%85/">GNU Radio 3.8.0.0安装</a></h6>
+<h6 id="gnu-radio教程一httpsblogwhite-alonecomgnuradioe69599e7a88b_1"><a href="https://blog.white-alone.com/GNURadio%E6%95%99%E7%A8%8B_1/">GNU Radio教程（一）</a></h6>
+<h6 id="gnu-radio教程三httpsblogwhite-alonecomgnuradioe69599e7a88b_3"><a href="https://blog.white-alone.com/GNURadio%E6%95%99%E7%A8%8B_3/">GNU Radio教程（三）</a></h6>
+<h6 id="软件定义无线电sdr的系列教程httpssignalseverywherecom"><a href="https://signalseverywhere.com">软件定义无线电(SDR)的系列教程</a></h6>
+<h6 id="hackrf入门家用无线门铃信号重放httpswwwfreebufcomnewstopnews83650html"><a href="https://www.freebuf.com/news/topnews/83650.html">HackRF入门：家用无线门铃信号重放</a></h6>
+<h6 id="如何使用sdrinspectrum逆向分析无线遥控信号httpswwwfreebufcomarticleswireless111801html"><a href="https://www.freebuf.com/articles/wireless/111801.html">如何使用SDR+Inspectrum逆向分析无线遥控信号</a></h6>
+<h6 id="gnu-radio-hacking-使用gnu-radio破解固定码无线遥控httpswwwfreebufcomarticleswireless115289html"><a href="https://www.freebuf.com/articles/wireless/115289.html">GNU Radio Hacking ①：使用GNU Radio破解固定码无线遥控</a></h6>
+<h6 id="gnu-radio-hacking-使用sdr嗅探北欧芯片无线键盘鼠标数据包httpswwwfreebufcomarticleswireless115440html"><a href="https://www.freebuf.com/articles/wireless/115440.html">GNU Radio Hacking ②：使用SDR嗅探北欧芯片无线键盘鼠标数据包</a></h6>
+<h6 id="limesdr-上手指南httpspaperseebugorg675"><a href="https://paper.seebug.org/675/">LimeSDR 上手指南</a></h6>
+<h6 id="limesdr-上手指南--limesdr-getting-starded-quicklyhttpsunicorn360comblog20170412limesdr-getting-started-quickly"><a href="https://unicorn.360.com/blog/2017/04/12/LimeSDR-Getting-Started-Quickly/">LimeSDR 上手指南 | LimeSDR Getting Starded Quickly</a></h6>
+<h6 id="limesdr-无线信号重放攻击和逆向分析httpsyasengorgwireless-signal-replay-attack-and-reverse-with-limesdrhtml"><a href="https://yaseng.org/wireless-signal-replay-attack-and-reverse-with-LimeSDR.html">LimeSDR 无线信号重放攻击和逆向分析</a></h6>
+<h6 id="使用-yard-stick-one-进行重放信号httpsmpweixinqqcomsr9df41rr4x9gaoaoku0xkq"><a href="https://mp.weixin.qq.com/s/r9DF41rr4X9GaOaOKu0xkQ">使用 YARD Stick One 进行重放信号</a></h6>
+<h6 id="killbee框架的使用上httpsmpweixinqqcomszx4inalem9omtwnkojuvrq"><a href="https://mp.weixin.qq.com/s/Zx4INaLeM9OMtWNkojuvRQ">KillBee框架的使用（上）</a></h6>
+<h6 id="killerbee-框架使用二httpsmpweixinqqcomskxj694hsgu9p1p4swypk6a"><a href="https://mp.weixin.qq.com/s/kxJ694HSgU9P1p4SwYpK6A">KillerBee 框架使用（二）</a></h6>
+<h6 id="101-things-to-do-with-a-limesdrhttpsdiscoursemyriadrforgt101-things-to-do-with-a-limesdr"><a href="https://discourse.myriadrf.org/t/101-things-to-do-with-a-limesdr/">101 Things to do with a LimeSDR</a></h6>
+<h6 id="plutosdr入门指南httpsunicorn360comblog20170922plutosdr-getting-started"><a href="https://unicorn.360.com/blog/2017/09/22/PlutoSDR-getting-started/">PlutoSDR入门指南</a></h6>
+<h6 id="diy天线sdrgnuradio实现低成本接收解码韩国gk-2a气象卫星信号httpswwwfreebufcomgeek226035html"><a href="https://www.freebuf.com/geek/226035.html">DIY天线+SDR+GNURadio实现低成本接收解码韩国GK-2A气象卫星信号</a></h6>
+<h6 id="如何接收和解码印度gps卫星的信号httpswwwrtl-sdrcomreceiving-and-decoding-the-navic-indian-gps-satellites"><a href="https://www.rtl-sdr.com/receiving-and-decoding-the-navic-indian-gps-satellites/">如何接收和解码印度GPS卫星的信号</a></h6>
+<h6 id="rtl-sdr-ais-接收httpswwwrtl-sdrcomrtl-sdr-tutorial-cheap-ais-ship-tracking"><a href="https://www.rtl-sdr.com/rtl-sdr-tutorial-cheap-ais-ship-tracking/">RTL-SDR AIS 接收</a></h6>
+<h4 id="gps-hacking">GPS Hacking</h4>
+<h6 id="gps定位欺骗httpsmpweixinqqcoms1kewedl-wvspnxyxxmjbra"><a href="https://mp.weixin.qq.com/s/1kEwedl-wVsPNxYXXMjbrA">GPS定位欺骗</a></h6>
+<h6 id="gps欺骗实验httpswwwanquankecompostid204316"><a href="https://www.anquanke.com/post/id/204316">GPS欺骗实验</a></h6>
+<h6 id="利用hackrf进行gps劫持实验流程攻略httpswwwfreebufcomarticlesterminal144296html"><a href="https://www.freebuf.com/articles/terminal/144296.html">利用HackRF进行GPS劫持实验流程攻略</a></h6>
+<h4 id="gsmcdmalte-hacking--base-stations">GSM/CDMA/LTE Hacking &amp;&amp; Base Stations</h4>
+<h6 id="gsm-hacking-part--使用sdr扫描嗅探gsm网络httpswwwfreebufcomarticleswireless110773html"><a href="https://www.freebuf.com/articles/wireless/110773.html">GSM Hacking Part ① ：使用SDR扫描嗅探GSM网络</a></h6>
+<h6 id="gsm-hacking-part--使用sdr捕获gsm网络数据并解密httpswwwfreebufcomarticleswireless111577html"><a href="https://www.freebuf.com/articles/wireless/111577.html">GSM Hacking Part ② ：使用SDR捕获GSM网络数据并解密</a></h6>
+<h6 id="sniffing-gsm-traffic-with-hackrfhttpsz4ziggywordpresscom20150517sniffing-gsm-traffic-with-hackrf"><a href="https://z4ziggy.wordpress.com/2015/05/17/sniffing-gsm-traffic-with-hackrf/">Sniffing GSM Traffic with HackRF</a></h6>
+<h6 id="passive-imsi-catcherhttpsgithubcomptrkrysikgr-gsmwikipassive-imsi-catcher"><a href="https://github.com/ptrkrysik/gr-gsm/wiki/Passive-IMSI-Catcher">Passive IMSI Catcher</a></h6>
+<h6 id="原创gsm-sniffing入门硬件篇1-2楼软件篇6楼httpsbbspediycomthread-182574htm"><a href="https://bbs.pediy.com/thread-182574.htm">[原创]GSM Sniffing入门（硬件篇1-2楼，软件篇6楼）</a></h6>
+<h6 id="翻译剖析-gsm-加密机制以及位置更新的过程httpsbbspediycomthread-221127htm"><a href="https://bbs.pediy.com/thread-221127.htm">[翻译]剖析 GSM 加密机制以及位置更新的过程</a></h6>
+<h6 id="openbts使用指南httpsblogwhite-alonecomopenbtse4bdbfe794a8e68c87e58d97"><a href="https://blog.white-alone.com/OpenBTS%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">OpenBTS使用指南</a></h6>
+<h6 id="limesdrosmotrxopenbts搭建gsm基站httpsmpweixinqqcomsd1gw78kue7ya35uwx0suow"><a href="https://mp.weixin.qq.com/s/D1gw78KUe7Ya35UwX0SUOw">LimeSDR+OsmoTRX+OpenBTS搭建GSM基站</a></h6>
+<h6 id="build-a-gsm-network-with-openbsc-osmobts-osmotrx-and-usrp-b210-on-a-single-pchttpscyberloginitcom20180427build-a-gsm-network-with-openbsc-osmobts-osmotrx-and-usrp-b210-on-a-single-pchtml"><a href="https://cyberloginit.com/2018/04/27/build-a-gsm-network-with-openbsc-osmobts-osmotrx-and-usrp-b210-on-a-single-pc.html">Build a GSM Network with OpenBSC OsmoBTS OsmoTRX and USRP B210 on a Single PC</a></h6>
+<h6 id="creating-your-own-gsm-network-with-limesdrhttpslucasteskedev201912creating-your-own-gsm-network-with-limesdr"><a href="https://lucasteske.dev/2019/12/creating-your-own-gsm-network-with-limesdr/">Creating Your Own GSM Network with LimeSDR</a></h6>
+<h6 id="stage-admisys-documentationhttpspl4ystore"><a href="https://pl4y.store/">Stage Admisys Documentation</a></h6>
+<h6 id="osmocom-accelerate3g5-wikihttpsunicorn360comblog20170411osmocom-accelerate3g5-wiki"><a href="https://unicorn.360.com/blog/2017/04/11/Osmocom-Accelerate3g5-WiKi/">Osmocom Accelerate3g5 WiKi</a></h6>
+<h6 id="使用srslte搭建4g基站用于日常测试httpsblogwhite-alonecome4bdbfe794a8srsltee690ade5bbba4ge59fbae7ab99e794a8e4ba8ee697a5e5b8b8e6b58be8af95"><a href="https://blog.white-alone.com/%E4%BD%BF%E7%94%A8srsLTE%E6%90%AD%E5%BB%BA4G%E5%9F%BA%E7%AB%99%E7%94%A8%E4%BA%8E%E6%97%A5%E5%B8%B8%E6%B5%8B%E8%AF%95/">使用srsLTE搭建4G基站用于日常测试</a></h6>
+<h6 id="使用bladerf或者b210快速构建4g-lte测试网httpsblogwhite-alonecome4bdbfe794a8bladerfe68896e88085b210e5bfabe9809fe69e84e5bbba4g20ltee6b58be8af95e7bd91"><a href="https://blog.white-alone.com/%E4%BD%BF%E7%94%A8BladeRF%E6%88%96%E8%80%85B210%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA4G%20LTE%E6%B5%8B%E8%AF%95%E7%BD%91/">使用BladeRF或者B210快速构建4G LTE测试网</a></h6>
+<h6 id="使用gnu-radio--openlte--sdr-搭建4g-lte基站httpswwwfreebufcomarticleswireless108417html"><a href="https://www.freebuf.com/articles/wireless/108417.html">使用GNU Radio + OpenLTE + SDR 搭建4G LTE基站</a></h6>
+<h6 id="ubuntu-1604系统limesdr使用srslte搭建lte实验环境httpswwwmobibrwcom201810678"><a href="https://www.mobibrw.com/2018/10678">Ubuntu 16.04系统LimeSDR使用srsLTE搭建LTE实验环境</a></h6>
+<h6 id="ubuntu-1604系统limesdr-v14使用最新版本的openairinterface5g代码搭建lte实验环境httpswwwmobibrwcom201812354"><a href="https://www.mobibrw.com/2018/12354">Ubuntu 16.04系统LimeSDR V1.4使用最新版本的OpenAirInterface5g代码搭建LTE实验环境</a></h6>
+<h6 id="build-a-lte-network-with-srslte-and-program-your-own-usim-cardhttpscyberloginitcom20180503build-a-lte-network-with-srslte-and-program-your-own-usim-cardhtml"><a href="https://cyberloginit.com/2018/05/03/build-a-lte-network-with-srslte-and-program-your-own-usim-card.html">Build a LTE Network with srsLTE and Program Your Own USIM Card</a></h6>
+<h6 id="5g-nr-development-and-setup-i-openairinterface-5g----wikishttpsgitlabeurecomfroaiopenairinterface5g-wikis5g-nr-development-and-setup"><a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/wikis/5g-nr-development-and-setup">5G-Nr-Development-and-Setup I OpenAirInterface-5G &ndash; Wikis</a></h6>
+<h6 id="走进开源sdr实验室-一起玩转4g5g开源项目srsransrslte升级版安装方法nb-iot测试httpsmpweixinqqcomszs5n06wue5k6txylahdvrq"><a href="https://mp.weixin.qq.com/s/Zs5n06wUE5K6TxYlahDVRQ">走进“开源SDR实验室” 一起玩转4G/5G开源项目srsRAN(srsLTE升级版)：安装方法+NB-IoT测试</a></h6>
+<h4 id="car-hacking">Car Hacking</h4>
+<h6 id="汽车安全测试checklisthttpsmpweixinqqcomspbru2pe-keptq909w4pk9w"><a href="https://mp.weixin.qq.com/s/Pbru2pe-KeptQ909w4pk9w">汽车安全测试Checklist</a></h6>
+<h6 id="车联网安全系列特斯拉ibeacon隐私泄露httpswwwanquankecompostid197750"><a href="https://www.anquanke.com/post/id/197750">车联网安全系列——特斯拉iBeacon隐私泄露</a></h6>
+<h6 id="hacking-all-the-cars---can总线逆向httpswwwanquankecompostid209141"><a href="https://www.anquanke.com/post/id/209141">Hacking All The Cars - CAN总线逆向</a></h6>
+<h6 id="车联网安全系列特斯拉-nfc-中继攻击cve-2020-15912httpswwwanquankecompostid213885"><a href="https://www.anquanke.com/post/id/213885">车联网安全系列——特斯拉 NFC 中继攻击（CVE-2020-15912）</a></h6>
+<h6 id="ucla-ece209aswinter-2018汽车无钥匙门禁系统中继攻击httpsmpweixinqqcomsgs2dmhsab4uleqloczscgg"><a href="https://mp.weixin.qq.com/s/gS2dMhSab4UlEqLoCzScgg">UCLA ECE209AS（Winter 2018）：汽车无钥匙门禁系统中继攻击</a></h6>
+<h6 id="越狱-subaru-starlink-汽车中控系统并实现持久化访问httpsgithubcomsgayousubaru-starlink-researchblobmasterdocreadmemd"><a href="https://github.com/sgayou/subaru-starlink-research/blob/master/doc/README.md">越狱 Subaru StarLink 汽车中控系统并实现持久化访问</a></h6>
+<h6 id="汽车智能警报器的安全问题分析httpswwwpentestpartnerscomsecurity-bloggone-in-six-seconds-exploiting-car-alarms"><a href="https://www.pentestpartners.com/security-blog/gone-in-six-seconds-exploiting-car-alarms/">汽车智能警报器的安全问题分析</a></h6>
+<h4 id="工控安全">工控安全</h4>
+<h6 id="工控靶场演示-从外网到内网设备的入侵httpsmpweixinqqcomsezt9jhi2scpk5ofbaw-bqw"><a href="https://mp.weixin.qq.com/s/EzT9jHI2ScPk5ofBAw-bQw">工控靶场演示 从外网到内网设备的入侵</a></h6>
+<hr>
+<h2 id="博客">博客</h2>
+<hr>
+<h3 id="个人博客">个人博客</h3>
+<h6 id="demonsecs-bloghttpwwwggseccn"><a href="http://www.ggsec.cn">Demonsec’s Blog</a></h6>
+<h6 id="国光-bloghttpswwwsqlseccom"><a href="https://www.sqlsec.com">国光 Blog</a></h6>
+<h6 id="倾旋的博客httpspayloadsonline"><a href="https://payloads.online/">倾旋的博客</a></h6>
+<h6 id="三好学生博客https3gstudentgithubio"><a href="https://3gstudent.github.io/">三好学生博客</a></h6>
+<h6 id="snowming04s-bloghttpblogleanotecomsnowming"><a href="http://blog.leanote.com/snowming">Snowming04&rsquo;s Blog</a></h6>
+<h6 id="wbglils-bloghttpswbglilgithubio"><a href="https://wbglil.github.io/">WBGlil&rsquo;s blog</a></h6>
+<h6 id="清风明月s-bloghttpwwwsecbookinfo"><a href="http://www.secbook.info/">清风明月`s Blog</a></h6>
+<h6 id="九世s-bloghttps422926799githubio"><a href="https://422926799.github.io/">九世`s Blog</a></h6>
+<h6 id="ssooking---博客园httpswwwcnblogscomssooking"><a href="https://www.cnblogs.com/ssooking">ssooking - 博客园</a></h6>
+<h6 id="干货集中营---算命縖子httpwwwnmd5comtestindexphp"><a href="http://www.nmd5.com/test/index.php">干货集中营 - 算命縖子</a></h6>
+<h6 id="cnhacks-bloghttpssecurityreseachergiteeiosecurityreseacherarchives"><a href="https://securityreseacher.gitee.io/securityreseacher/archives/">cnhack&rsquo;s blog</a></h6>
+<h6 id="nuclearatk-核攻击-网络安全实验室httpslcxcc"><a href="https://lcx.cc/">Nuclear&rsquo;Atk (核攻击) 网络安全实验室</a></h6>
+<h6 id="独自等待博客httpswwwwaitalonecn"><a href="https://www.waitalone.cn/">独自等待博客</a></h6>
+<h6 id="伍默s-bloghttpswuhashcom"><a href="https://wuhash.com/">伍默`s Blog</a></h6>
+<h6 id="mrxns-bloghttpsmrxnnet"><a href="https://mrxn.net/">Mrxn&rsquo;s Blog</a></h6>
+<h6 id="k8哥哥s-bloghttpk8gegeorg"><a href="http://k8gege.org/">K8哥哥’s Blog</a></h6>
+<h6 id="s1nhs-bloghttps1nhcom"><a href="http://s1nh.com/">S1NH’s Blog</a></h6>
+<h6 id="evi1cgs-bloghttpsevi1cgme"><a href="https://evi1cg.me/">Evi1cg’s Blog</a></h6>
+<h6 id="teamssixs-bloghttpsteamssixcom"><a href="https://teamssix.com/">TeamsSix&rsquo;s Blog</a></h6>
+<h6 id="aresxs-bloghttpsares-xcom"><a href="https://ares-x.com/">AresX&rsquo;s Blog</a></h6>
+<h6 id="jd1412s-bloghttpsjd1412githubio"><a href="https://jd1412.github.io/">JD1412’s Blog</a></h6>
+<h6 id="grayads-bloghttpstrojanazhentop"><a href="https://trojanazhen.top/">Gray.Ad&rsquo;s Blog</a></h6>
+<h6 id="hexchristmass-bloghttpshexchristmasgithubio"><a href="https://hexchristmas.github.io/">HexChristmas&rsquo;s Blog</a></h6>
+<h6 id="驱蚊器喵的插座httpsblogmeowpage"><a href="https://blog.meow.page/">驱蚊器喵的插座</a></h6>
+<h6 id="小晨曦s-bloghttpsxcxmikucom"><a href="https://xcxmiku.com/">小晨曦`s Blog</a></h6>
+<h6 id="雨苁ℒ-bloghttpswwwddosicom"><a href="https://www.ddosi.com/">雨苁ℒ Blog</a></h6>
+<h6 id="极客实验室httpblogechocool"><a href="http://blog.echo.cool/">极客实验室</a></h6>
+<h3 id="团队博客">团队博客</h3>
+<h6 id="即刻安全-bloghttpwwwsecistcom"><a href="http://www.secist.com/">即刻安全 Blog</a></h6>
+<h6 id="360-安全核心技术博客httpsblogs360cn"><a href="https://blogs.360.cn/">360 安全核心技术博客</a></h6>
+<h6 id="360-redteam-bloghttpredteam360cnblog"><a href="http://redteam.360.cn/blog/">360 RedTeam Blog</a></h6>
+<h6 id="360-0kee-team-bloghttps0kee360cnblog"><a href="https://0kee.360.cn/blog/">360 0Kee Team Blog</a></h6>
+<h6 id="长亭博客httpsblogchaitincn"><a href="https://blog.chaitin.cn/">长亭博客</a></h6>
+<h6 id="腾讯安全应急响应中心博客httpssecuritytencentcomindexphpblog"><a href="https://security.tencent.com/index.php/blog">腾讯安全应急响应中心博客</a></h6>
+<h6 id="chabug安全博客httpswwwchabugorg"><a href="https://www.chabug.org/">ChaBug安全博客</a></h6>
+<h6 id="ms08067-安全实验室httpblogms08067com"><a href="http://blog.ms08067.com/">MS08067 安全实验室</a></h6>
+<h6 id="uknowsechttpsuknowseccn"><a href="https://uknowsec.cn/">UKnowSec</a></h6>
+<h3 id="无线电硬件极客">无线电&amp;硬件极客</h3>
+<h6 id="雪碧-0xroot--radiohub--iot-rf-hardware-hacking--博观而约取-厚积而薄发httpscn0xrootcom"><a href="https://cn0xroot.com/">雪碧 0xroot | RadioHub | IoT RF Hardware Hacking | 博观而约取 厚积而薄发</a></h6>
+<h6 id="k1two2s-geek-hubhttpswwwcnblogscomk1two2"><a href="https://www.cnblogs.com/k1two2/">K1two2&rsquo;s Geek Hub</a></h6>
+<h6 id="iternull-bloghttpblogiternullcom"><a href="http://blog.iternull.com/">IterNull Blog</a></h6>
+<h6 id="物联网安全百科httpsiot-securitywiki"><a href="https://iot-security.wiki/">物联网安全百科</a></h6>
+<h6 id="360无线电安全研究院httpsunicorn360comblog"><a href="https://unicorn.360.com/blog/">360无线电安全研究院</a></h6>
+<h6 id="white-alones-bloghttpsblogwhite-alonecom"><a href="https://blog.white-alone.com/">White-Alone&rsquo;s Blog</a></h6>
+<h6 id="jarviss-bloghttpswwwjarviswcom"><a href="https://www.jarvisw.com/">Jarvis`s Blog</a></h6>
+<h6 id="yasengs-bloghttpsyasengorg"><a href="https://yaseng.org/">Yaseng&rsquo;s Blog</a></h6>
+<h6 id="一只猿---前端攻城尸httpswww92ezcom"><a href="https://www.92ez.com/">一只猿 - 前端攻城尸</a></h6>
+<h6 id="默默的点滴---智障儿童欢乐多httpswwwmobibrwcom"><a href="https://www.mobibrw.com/">默默的点滴 - 智障儿童欢乐多</a></h6>
+<h6 id="hackrfnethttpswwwhackrfnet"><a href="https://www.hackrf.net/">HackRF.net</a></h6>
+<h6 id="rtl-sdr-bloghttpswwwrtl-sdrcom"><a href="https://www.rtl-sdr.com">RTL-SDR Blog</a></h6>
+<h6 id="wiattacks-bloghttpwwwwiattacknet"><a href="http://www.wiattack.net/">WIATTACK&rsquo;s Blog</a></h6>
+<h6 id="firefox2100s-bloghttpsfirefox2100githubio"><a href="https://firefox2100.github.io/">Firefox2100&rsquo;s Blog</a></h6>
+<h6 id="myriadrf论坛httpsdiscoursemyriadrforg"><a href="https://discourse.myriadrf.org/">MyriadRF论坛</a></h6>
+<h6 id="vksdr---rfsdrsatelliteshttpsvksdrcom"><a href="https://vksdr.com/">VKSDR - RF,SDR,Satellites</a></h6>
+<hr>
+<h2 id="常逛的论坛社区">常逛的论坛&amp;社区</h2>
+<hr>
+<h4 id="安全社区">安全社区</h4>
+<h6 id="freebufhttpswwwfreebufcom"><a href="https://www.freebuf.com">FreeBuf</a></h6>
+<h6 id="t00lshttpswwwt00lsnet"><a href="https://www.t00ls.net">T00ls</a></h6>
+<h6 id="先知社区httpsxzaliyuncom"><a href="https://xz.aliyun.com">先知社区</a></h6>
+<h6 id="奇安信攻防社区httpsforumbutiannet"><a href="https://forum.butian.net/">奇安信攻防社区</a></h6>
+<h6 id="90sec社区httpsforum90seccom"><a href="https://forum.90sec.com/">90Sec社区</a></h6>
+<h6 id="看雪论坛httpsbbspediycom"><a href="https://bbs.pediy.com/">看雪论坛</a></h6>
+<h6 id="secpulse---安全脉搏httpswwwsecpulsecom"><a href="https://www.secpulse.com/">SecPulse - 安全脉搏</a></h6>
+<h6 id="吾爱破解论坛httpswww52pojiecn"><a href="https://www.52pojie.cn">吾爱破解论坛</a></h6>
+<h6 id="i春秋论坛httpsbbsichunqiucom"><a href="https://bbs.ichunqiu.com/">i春秋论坛</a></h6>
+<h6 id="secin安全社区httpssec-incom"><a href="https://sec-in.com/">SecIN安全社区</a></h6>
+<h6 id="零组交流社区httpsforum0-secorg"><a href="https://forum.0-sec.org/">零组交流社区</a></h6>
+<h6 id="parrotsec中文社区httpsparrotsec-cnorg"><a href="https://parrotsec-cn.org/">ParrotSec中文社区</a></h6>
+<h6 id="kali论坛httpsbbskalicn"><a href="https://bbskali.cn/">Kali论坛</a></h6>
+<h4 id="安全新闻">安全新闻</h4>
+<h6 id="freebufhttpswwwfreebufcom-1"><a href="https://www.freebuf.com">FreeBuf</a></h6>
+<h6 id="嘶吼-roartalkhttpswww4houcom"><a href="https://www.4hou.com/">嘶吼 RoarTalk</a></h6>
+<h6 id="安全客httpswwwanquankecom"><a href="https://www.anquanke.com/">安全客</a></h6>
+<h6 id="每日安全---腾讯玄武实验室httpssectoday"><a href="https://sec.today/">每日安全 - 腾讯玄武实验室</a></h6>
+<h6 id="mottin互联网威胁情报社区httpwwwmottoincom"><a href="http://www.mottoin.com/">MottIN互联网威胁情报社区</a></h6>
+<h4 id="papers">Papers</h4>
+<h6 id="seebug-paperhttpspaperseebugorg"><a href="https://paper.seebug.org/">SeeBug Paper</a></h6>
+<h6 id="exploit-datebase-papershttpswwwexploit-dbcompapers"><a href="https://www.exploit-db.com/papers">Exploit Datebase Papers</a></h6>
+<h4 id="exploit搜索">Exploit搜索</h4>
+<h5 id="exploit-datebase-papershttpswwwexploit-dbcompapers-1"><a href="https://www.exploit-db.com/papers">Exploit Datebase Papers</a></h5>
+<h5 id="cybercrimehttpcybercrime-trackernet"><a href="http://cybercrime-tracker.net/">Cybercrime</a></h5>
+<h5 id="sploitushttpssploituscom"><a href="https://sploitus.com/">Sploitus</a></h5>
+<h4 id="在线沙盒">在线沙盒</h4>
+<h5 id="virustotalhttpswwwvirustotalcomgui"><a href="https://www.virustotal.com/gui/">VirusTotal</a></h5>
+<h5 id="anyrunhttpsappanyrun"><a href="https://app.any.run/">Anyrun</a></h5>
+<h4 id="红队资源">红队资源</h4>
+<h6 id="iredteamhttpswwwiredteamoffensive-securitycode-execution"><a href="https://www.ired.team/offensive-security/code-execution">Ired.team</a></h6>
+<h6 id="0xspcomhttps0xspcomoffensivered-teaming-toolkit-collection"><a href="https://0xsp.com/offensive/red-teaming-toolkit-collection">0xsp.com</a></h6>
+<h6 id="awesome-red-teaminghttpsgithubcomyeyintminthuhtutawesome-red-teaming"><a href="https://github.com/yeyintminthuhtut/Awesome-Red-Teaming">Awesome-Red-Teaming</a></h6>
+<h6 id="redteam-notebookhttpsgithubcomfoobartoredteam-notebook"><a href="https://github.com/foobarto/redteam-notebook">RedTeam-NoteBook</a></h6>
+<h6 id="red-team-notes-20httpsdmcxbluegitbookiored-team-notes-2-0"><a href="https://dmcxblue.gitbook.io/red-team-notes-2-0/">Red Team Notes 2.0</a></h6>
+<h6 id="mitre--attck-中文站httpshuntingdaygithubio"><a href="https://huntingday.github.io">MITRE | ATT&amp;CK 中文站</a></h6>
+<h3 id="越狱">越狱</h3>
+<h5 id="苹果越狱对照表httpswwwtheiphonewikicomwikijailbreak"><a href="https://www.theiphonewiki.com/wiki/Jailbreak">苹果越狱对照表</a></h5>
+<h3 id="代码审计">代码审计</h3>
+<h5 id="php-codes-aduit工具httpsphpauditbooksvirzzcom12html"><a href="https://phpaudit.books.virzz.com/1.2.html">PHP Codes Aduit工具</a></h5>
+<h5 id="代码审计入门httpswooyunjsorgdropse4bba3e7a081e5aea1e8aea1e585a5e997a8e680bbe7bb93html"><a href="https://wooyun.js.org/drops/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93.html">代码审计入门</a></h5>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/new/about/">关于我</a></li>
+        
+        <li><a href="/new/archives/">归档</a></li>
+        
+        <li><a href="/new/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            没有标签
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "DroidKali/talks"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2021 <a href="https://droidkali.github.io/new">纯真&#39;s Blog By jiyili</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/new/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/new/js/douban.js'></script>
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://droidkali.github.io/new/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://droidkali.github.io/new">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://droidkali.github.io/new/2021/09/04/test.html" title="Test">Test</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/new/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/new/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.ggsec.cn" title="Demomsec&#39;s blog">Demonsec&#39;s blog</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://www.sqlsec.com" title="国光&#39;s blog">国光&#39;s blog</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://droidkali.github.io/new/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
